@@ -1,0 +1,29 @@
+  DB Users
+    uid int 
+    fname varchar
+    lname  varchar
+    email varchar
+    password varchar 
+    joinedDate date
+    uHash varchar
+
+  DB Topics 
+    tid int 
+    topicName varchar
+
+  DB Question
+    qid  
+    askingdate
+    tid (FK)
+    uid (Fk)
+    question
+    explanation
+    askedDate
+
+  DB Answer
+    aid (pk)
+    qid (Fk) 
+    ansDate 
+    uid (Fk)
+    answer (CK Editor)
+
